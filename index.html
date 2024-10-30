@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex Aleatoria</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dancing-container">
+      <img
+        id="left-pokemon"
+        class="dancing-pokemon"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        alt="Dancing Pokémon 1"
+      />
+      <img
+        id="right-pokemon"
+        class="dancing-pokemon"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+        alt="Dancing Pokémon 2"
+      />
+    </div>
+
+    <div class="container">
+      <h1>Pokédex Aleatoria</h1>
+      <div id="pokemon" class="pokemon-card">
+        <img id="pokemon-img" src="" alt="Imagen del Pokémon" />
+        <h2 id="pokemon-name"></h2>
+        <p id="pokemon-description"></p>
+        <p id="pokemon-details"></p>
+      </div>
+      <button id="random-pokemon-btn">Obtener Pokémon Aleatorio</button>
+    </div>
+
+    <div class="search-container">
+      <h2>Buscar Pokémon</h2>
+      <input
+        type="text"
+        id="pokemon-search"
+        placeholder="Buscar Pokémon por nombre o ID"
+      />
+      <button id="search-pokemon-btn">Buscar</button>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <p id="modal-message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
